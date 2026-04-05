@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+
+    "target": "es2015",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -11,7 +12,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -19,7 +20,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },
   "include": [
@@ -27,8 +29,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
-  ],
+    "app/_utils/fetcher.js",
+    ".contentlayer/generated"
+, "app/components/bento/map.js", "tailwind.config.js", "next.config.js"  ],
   "exclude": ["node_modules"]
 }
