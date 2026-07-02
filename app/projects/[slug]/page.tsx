@@ -1,4 +1,4 @@
-import { allProjects } from ".contentlayer/generated";
+import { allProjects } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 
 import Avatar from "@/app/components/Avatar";

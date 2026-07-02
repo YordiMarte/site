@@ -1,13 +1,17 @@
 "use client";
 
-import type { Blog as PostType } from ".contentlayer/generated";
+import type { Blog as PostType } from "contentlayer/generated";
 import Post from "./Post";
 import React, { useRef, useState } from "react";
 
 function getRelativeCoordinates(
   event: React.MouseEvent<HTMLUListElement>,
-  referenceElement: any
+  referenceElement: HTMLUListElement | null
 ) {
+  if (!referenceElement) {
+    return { x: 0, y: 0 };
+  }
+
   const position = {
     x: event.pageX,
     y: event.pageY,
@@ -20,12 +24,12 @@ function getRelativeCoordinates(
     height: referenceElement.clientHeight,
   };
 
-  let reference = referenceElement.offsetParent;
+  let reference = referenceElement.offsetParent as HTMLElement | null;
 
   while (reference) {
     offset.left += reference.offsetLeft;
     offset.top += reference.offsetTop;
-    reference = reference.offsetParent;
+    reference = reference.offsetParent as HTMLElement | null;
   }
 
   return {
@@ -43,7 +47,7 @@ export default function PostList({ posts }: PostListProps) {
     x: 240,
     y: 0,
   });
-  const listRef = useRef(null);
+  const listRef = useRef<HTMLUListElement | null>(null);
   const handleMouseMove = (e: React.MouseEvent<HTMLUListElement>) => {
     setMousePosition(getRelativeCoordinates(e, listRef.current));
   };

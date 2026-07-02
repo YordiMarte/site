@@ -45,6 +45,7 @@ export const Blog = defineDocumentType(() => ({
     summary: { type: "string", required: true },
     date: { type: "string", required: true },
     updatedAt: { type: "string", required: false },
+    github: { type: "string", required: false },
     tags: { type: "json", required: false },
   },
   computedFields: blogComputedFields,

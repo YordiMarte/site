@@ -2,7 +2,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "@/app/components/Link";
-import { allBlogs } from ".contentlayer/generated";
+import { allBlogs } from "contentlayer/generated";
 
 import Avatar from "@/app/components/Avatar";
 import Tags from "@/app/components/Tags";

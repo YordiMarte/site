@@ -1,0 +1,7 @@
+allowBuilds:
+  bufferutil: true
+  contentlayer: true
+  esbuild: true
+  protobufjs: true
+  unrs-resolver: true
+  utf-8-validate: true

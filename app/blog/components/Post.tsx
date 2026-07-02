@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "@/app/components/Link";
 import Section from "@/app/components/Section";
 import { formatDate } from "@/app/_utils/formatDate";
-import type { Blog } from ".contentlayer/generated";
+import type { Blog } from "contentlayer/generated";
 
 type PostProps = {
   post: Blog;
@@ -15,14 +15,23 @@ type PostProps = {
 };
 
 export default function Post({ post, mousePosition }: PostProps) {
-  const { date, slug, title, image } = post;
+  const { date, title, image, slug, github } = post;
+
   const imageHeight = 150;
   const imageWidth = 300;
   const imageOffset = 24;
 
+  const externalHref = github?.trim();
+  const isExternal = Boolean(externalHref);
+  const href = externalHref || `/blog/${slug}`;
+
   return (
     <li className="group py-3 transition-opacity first:pt-0 last:pb-0">
-      <Link href={`/blog/${slug}`}>
+      <Link
+        href={href}
+        target={isExternal ? "_blank" : undefined}
+        rel={isExternal ? "noopener noreferrer" : undefined}
+      >
         <div className="transition-opacity">
           {image && mousePosition && (
             <motion.div
@@ -43,10 +52,14 @@ export default function Post({ post, mousePosition }: PostProps) {
               />
             </motion.div>
           )}
+
           <div className="flex items-center justify-between gap-6">
             <Section heading={formatDate(date)}>
-              <span className="font-medium leading-tight text-pretty">{title}</span>
+              <span className="font-medium leading-tight text-pretty">
+                {title}
+              </span>
             </Section>
+
             <div className="relative flex aspect-square h-24 w-24 min-w-24 items-center justify-center rounded-md bg-secondary shadow-sm md:hidden">
               {image ? (
                 <Image
