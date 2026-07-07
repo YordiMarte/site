@@ -107,10 +107,36 @@ export default async function About() {
 <Section heading="Projects" headingAlignment="left">
   <div className="flex flex-col gap-6">
 
-    {/* Project: Kivoff */}
+    {/* Project */}
+
+
+    {/* Ky*/}
     <div className="flex items-start justify-between gap-8">
 
-      {/* Left */}
+      <div className="flex flex-col gap-2">
+        <a href="https://github.com/YordiMarte/Ky" target="_blank" rel="noopener noreferrer" className="no-underline">
+          <h3 className="font-semibold text-white transition">
+            Ky
+          </h3>
+        <p className="text-gray-400 max-w-xs leading-relaxed">
+          An MCP native intregration for x402 using the AI SDK
+        </p>
+        </a>
+      </div>
+
+      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+        <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
+        <span className="bg-lime-600 text-cyan-100 text-xs px-3 py-1 rounded-full">Node.Js</span>
+        <span className="bg-gray-700 text-gray-200 text-xs px-3 py-1 rounded-full">AI SDK</span>
+        <span className="bg-pink-500 text-green-100 text-xs px-3 py-1 rounded-full">Turborepo</span>
+        <span className="bg-red-600 text-yellow-100 text-xs px-3 py-1 rounded-full">PNPM</span>
+        <span className="bg-black text-purple-100 text-xs px-3 py-1 rounded-full">Vercel</span>
+      </div>
+    </div>
+
+    {/* Kivoff */}
+    <div className="flex items-start justify-between gap-8">
+
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/Kivoff" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
@@ -123,17 +149,152 @@ export default async function About() {
         </a>
       </div>
 
-      {/* Right (badges) */}
       <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
         <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
-        <span className="bg-cyan-700 text-cyan-100 text-xs px-3 py-1 rounded-full">React</span>
-        <span className="bg-gray-700 text-gray-200 text-xs px-3 py-1 rounded-full">Next.js</span>
-        <span className="bg-green-700 text-green-100 text-xs px-3 py-1 rounded-full">Node.js</span>
-        <span className="bg-yellow-700 text-yellow-100 text-xs px-3 py-1 rounded-full">Docker</span>
-        <span className="bg-purple-700 text-purple-100 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+        <span className="bg-sky-500 text-slate-950 text-xs px-3 py-1 rounded-full">React</span>
+        <span className="bg-black text-gray-100 text-xs px-3 py-1 rounded-full">Next.js</span>
+        <span className="bg-lime-600 text-cyan-100 text-xs px-3 py-1 rounded-full">Node.js</span>
+        <span className="bg-blue-700 text-blue-100 text-xs px-3 py-1 rounded-full">Docker</span>
+        <span className="bg-blue-900 text-blue-100 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
       </div>
     </div>
 
+    {/* Site */}
+    <div className="flex items-start justify-between gap-8">
+
+      <div className="flex flex-col gap-2">
+        <a href="https://github.com/YordiMarte/site" target="_blank" rel="noopener noreferrer" className="no-underline">
+          <h3 className="font-semibold text-white transition">
+            Site
+          </h3>
+        <p className="text-gray-400 max-w-xs leading-relaxed">
+          My personal website
+        </p>
+        </a>
+      </div>
+
+      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+        <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
+        <span className="bg-sky-500 text-slate-950 text-xs px-3 py-1 rounded-full">React</span>
+        <span className="bg-black text-gray-100 text-xs px-3 py-1 rounded-full">Next.js</span>
+        <span className="bg-cyan-500 text-cyan-950 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+
+        <span className="bg-fuchsia-600 text-white text-xs px-3 py-1 rounded-full">Framer Motion</span>
+        <span className="bg-amber-400 text-slate-900 text-xs px-3 py-1 rounded-full">MDX</span>
+        <span className="bg-emerald-600 text-white text-xs px-3 py-1 rounded-full">Contentlayer</span>
+        <span className="bg-black text-white text-xs px-3 py-1 rounded-full">Vercel</span>
+      </div>
+    </div>
+
+    {/* score-solution */}
+    <div className="flex items-start justify-between gap-8">
+
+      <div className="flex flex-col gap-2">
+        <a href="https://github.com/YordiMarte/score-solution" target="_blank" rel="noopener noreferrer" className="no-underline">
+          <h3 className="font-semibold text-white transition">
+            Score-solution
+          </h3>
+        <p className="text-gray-400 max-w-xs leading-relaxed">
+          Private Customer Management System.
+        </p>
+        </a>
+      </div>
+
+      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+        <span className="bg-black text-gray-100 text-xs px-3 py-1 rounded-full">Next.js</span>
+        <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
+        <span className="bg-sky-500 text-slate-950 text-xs px-3 py-1 rounded-full">React</span>
+        <span className="bg-cyan-500 text-cyan-950 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+        <span className="bg-emerald-600 text-white text-xs px-3 py-1 rounded-full">Supabase</span>
+        <span className="bg-blue-900 text-blue-100 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+        <span className="bg-teal-600 text-white text-xs px-3 py-1 rounded-full">Supabase Auth</span>
+        <span className="bg-black text-white text-xs px-3 py-1 rounded-full">Vercel</span>
+      </div>
+    </div>
+
+    {/* Effectis */}
+    <div className="flex items-start justify-between gap-8">
+
+      <div className="flex flex-col gap-2">
+        <a href="https://github.com/YordiMarte/effectis" target="_blank" rel="noopener noreferrer" className="no-underline">
+          <h3 className="font-semibold text-white transition">
+            Effectis
+          </h3>
+        <p className="text-gray-400 max-w-xs leading-relaxed">
+          It is a Redis clone made in TypeScript but using an advanced functional model.
+        </p>
+        </a>
+      </div>
+
+      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+        <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
+        <span className="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Effect</span>
+        <span className="bg-red-700 text-red-100 text-xs px-3 py-1 rounded-full">Redis</span>
+        <span className="bg-amber-600 text-white text-xs px-3 py-1 rounded-full">RESP Protocol</span>
+        <span className="bg-yellow-500 text-black text-xs px-3 py-1 rounded-full">Bun</span>
+        <span className="bg-lime-600 text-cyan-100 text-xs px-3 py-1 rounded-full">Node.js</span>
+        <span className="bg-teal-600 text-white text-xs px-3 py-1 rounded-full">Vitest</span>
+        <span className="bg-blue-700 text-blue-100 text-xs px-3 py-1 rounded-full">Docker</span>
+      </div>
+    </div>
+
+    {/* effect-distributed */}
+    <div className="flex items-start justify-between gap-8">
+
+      <div className="flex flex-col gap-2">
+        <a href="https://github.com/YordiMarte/effect-distributed" target="_blank" rel="noopener noreferrer" className="no-underline">
+          <h3 className="font-semibold text-white transition">
+            effect-distributed
+          </h3>
+        <p className="text-gray-400 max-w-xs leading-relaxed">
+          Distributed semaphore library for Effect with pluggable backends and automatic TTL refresh.
+        </p>
+        </a>
+      </div>
+
+      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+        <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
+        <span className="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Effect</span>
+        <span className="bg-red-700 text-red-100 text-xs px-3 py-1 rounded-full">Redis</span>
+        <span className="bg-orange-600 text-white text-xs px-3 py-1 rounded-full">ioredis</span>
+        <span className="bg-slate-700 text-white text-xs px-3 py-1 rounded-full">Distributed Systems</span>
+        <span className="bg-lime-600 text-cyan-100 text-xs px-3 py-1 rounded-full">Node.js</span>
+        <span className="bg-yellow-500 text-black text-xs px-3 py-1 rounded-full">Bun</span>
+        <span className="bg-teal-600 text-white text-xs px-3 py-1 rounded-full">Vitest</span>
+        <span className="bg-blue-900 text-gray-900 text-xs px-3 py-1 rounded-full">GitHub Actions</span>
+        <span className="bg-green-700 text-white text-xs px-3 py-1 rounded-full">Changesets</span>
+        <span className="bg-red-600 text-white text-xs px-3 py-1 rounded-full">npm</span>
+      </div>
+    </div>
+
+    {/* Infera */}
+    <div className="flex items-start justify-between gap-8">
+
+      <div className="flex flex-col gap-2">
+        <a href="https://github.com/YordiMarte/infera" target="_blank" rel="noopener noreferrer" className="no-underline">
+          <h3 className="font-semibold text-white transition">
+            Infera
+          </h3>
+        <p className="text-gray-400 max-w-xs leading-relaxed">
+          AI Inference Gateway with rate limiting, caching, token billing and observability.
+        </p>
+        </a>
+      </div>
+
+      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+        <span className="bg-cyan-600 text-cyan-100 text-xs px-3 py-1 rounded-full">Go</span>
+        <span className="bg-pink-700 text-red-100 text-xs px-3 py-1 rounded-full">NestJS</span>
+        <span className="bg-red-700 text-red-100 text-xs px-3 py-1 rounded-full">Redis</span>
+        <span className="bg-blue-900 text-blue-100 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+        <span className="bg-blue-700 text-blue-100 text-xs px-3 py-1 rounded-full">Docker</span>
+        <span className="bg-blue-500 text-blue-100 text-xs px-3 py-1 rounded-full">Kubernetes</span>
+        <span className="bg-violet-700 text-black text-xs px-3 py-1 rounded-full">Terraform</span>
+        <span className="bg-blue-200 text-blue-500 text-xs px-3 py-1 rounded-full">Helm</span>
+        <span className="bg-yellow-600 text-blue-300 text-xs px-3 py-1 rounded-full">OpenTelemetry</span>
+        <span className="bg-orange-600 text-orange-100 text-xs px-3 py-1 rounded-full">Prometheus</span>
+        <span className="bg-slate-600 text-yellow-500 text-xs px-3 py-1 rounded-full">AWS</span>
+      </div>
+    </div>
   </div>
 
         </Section>
