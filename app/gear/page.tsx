@@ -133,6 +133,7 @@ const gear = [
     image: "/gear/VisualStudioCode.png",
     description: "The best code editor for Full-stack development. I use it daily.",
     link: "https://code.visualstudio.com/",
+    sponsored: false,
   },
   {
     name: "Notion",
@@ -141,6 +142,7 @@ const gear = [
       "The best all-in-one workspace for notes, tasks, and projects. I use it daily.",
     image: "/gear/Notion.png",
     link: "https://www.notion.com/",
+    sponsored: false,
   },
   {
     name: "Warp",
@@ -149,6 +151,7 @@ const gear = [
     description:
       "Warp is a modern terminal for developers. I use it daily for my development work.",
     link: "https://www.warp.dev/blog/warp-is-now-open-source",
+    sponsored: false,
   },
   {
     name: "Claude",
@@ -157,6 +160,7 @@ const gear = [
     description:
       "Claude is a next-generation AI assistant that helps me with coding, writing, and research. I use it daily for my projects.",
     link: "https://www.anthropic.com/claude",
+    sponsored: false,
   },
   {
     name: "GitHub",
@@ -165,5 +169,6 @@ const gear = [
       "GitHub is a web-based platform used for version control and collaborative software development. I use it daily for my projects.",
     image: "/gear/github.png",
     link: "https://github.com/",
+    sponsored: false,
   },
 ];
