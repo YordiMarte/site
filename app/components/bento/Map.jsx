@@ -2,7 +2,12 @@
 
 import React from "react";
 
-export default function Map() {
+type MapProps = {
+  lng: number;
+  lat: number;
+};
+
+export default function Map({ lng, lat }: MapProps) {
   return (
     <div className="flex h-full w-full items-center justify-center rounded-lg border border-secondary bg-secondary p-6">
       <div className="text-center">
