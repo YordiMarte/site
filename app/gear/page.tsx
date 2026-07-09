@@ -1,11 +1,5 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Metadata } from "next";
-
-import Claude from "public/gear/Claude.png";
-import VisualStudioCode from "public/gear/VisualStudioCode.png";
-import Warp from "public/gear/Warp.png";
-import Github from "public/gear/github.png";
-import Notion from "public/gear/Notion.png";
 
 export const metadata: Metadata = {
   title: "Gear | Yordi Marte",
@@ -22,7 +16,7 @@ export const metadata: Metadata = {
 interface ItemProps {
   title: string;
   description: string;
-  image: string | StaticImageData;
+  image: string;
   link: string;
   sponsored?: boolean;
 }
@@ -136,7 +130,7 @@ const gear = [
   {
     name: "Visual Studio Code",
     category: "Apps",
-    image: VisualStudioCode,
+    image: "/gear/VisualStudioCode.png",
     description: "The best code editor for Full-stack development. I use it daily.",
     link: "https://code.visualstudio.com/",
   },
@@ -145,13 +139,13 @@ const gear = [
     category: "Apps",
     description:
       "The best all-in-one workspace for notes, tasks, and projects. I use it daily.",
-    image: Notion,
+    image: "/gear/Notion.png",
     link: "https://www.notion.com/",
   },
   {
     name: "Warp",
     category: "Apps",
-    image: Warp,
+    image: "/gear/Warp.png",
     description:
       "Warp is a modern terminal for developers. I use it daily for my development work.",
     link: "https://www.warp.dev/blog/warp-is-now-open-source",
@@ -159,7 +153,7 @@ const gear = [
   {
     name: "Claude",
     category: "Apps",
-    image: Claude,
+    image: "/gear/Claude.png",
     description:
       "Claude is a next-generation AI assistant that helps me with coding, writing, and research. I use it daily for my projects.",
     link: "https://www.anthropic.com/claude",
@@ -169,7 +163,7 @@ const gear = [
     category: "Apps",
     description:
       "GitHub is a web-based platform used for version control and collaborative software development. I use it daily for my projects.",
-    image: Github,
+    image: "/gear/github.png",
     link: "https://github.com/",
   },
 ];
