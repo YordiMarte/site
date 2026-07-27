@@ -103,7 +103,6 @@ export default function Home() {
         { name: "Go", color: "bg-cyan-600 text-cyan-100" },
         { name: "TypeScript", color: "bg-blue-600 text-blue-100" },
         { name: "Python", color: "bg-yellow-500 text-white" },
-        { name: "JavaScript", color: "bg-yellow-400 text-slate-900" },
       ],
     },
     {
@@ -113,11 +112,6 @@ export default function Home() {
         { name: "Redis", color: "bg-red-700 text-red-100" },
         { name: "PostgreSQL", color: "bg-blue-900 text-blue-100" },
         { name: "Kafka", color: "bg-gray-800 text-gray-100" },
-        { name: "Prisma", color: "bg-violet-500 text-slate-100" },
-        { name: "Supabase", color: "bg-emerald-600 text-emerald-100" },
-        { name: "Node.js", color: "bg-lime-600 text-slate-950" },
-        { name: "Django", color: "bg-green-900 text-green-100" },
-        { name: "GraphQL", color: "bg-fuchsia-600 text-white" },
       ],
     },
     {
@@ -127,7 +121,6 @@ export default function Home() {
         { name: "Kubernetes", color: "bg-blue-500 text-blue-100" },
         { name: "Terraform", color: "bg-violet-700 text-black" },
         { name: "Docker", color: "bg-blue-700 text-blue-100" },
-        { name: "Helm", color: "bg-blue-200 text-blue-500" },
       ],
     },
     {
@@ -142,8 +135,6 @@ export default function Home() {
       category: "Frontend",
       items: [
         { name: "Next.js", color: "bg-black text-gray-100" },
-        { name: "Tailwind", color: "bg-cyan-500 text-cyan-950" },
-        { name: "shadcn/ui", color: "bg-zinc-700 text-zinc-100" },
         { name: "React.js", color: "bg-sky-500 text-slate-950" },
       ],
     },
@@ -153,7 +144,6 @@ export default function Home() {
         { name: "GitHub Actions", color: "bg-blue-900 text-gray-900" },
         { name: "Turborepo", color: "bg-pink-500 text-gray-100" },
         { name: "PNPM", color: "bg-yellow-500 text-gray-900" },
-        { name: "NPM", color: "bg-red-600 text-white" },
         { name: "Git", color: "bg-slate-800 text-white" },
         { name: "Claude", color: "bg-orange-800 text-orange-450" },
         { name: "GitHub Copilot", color: "bg-purple-600 text-purple-100" },
