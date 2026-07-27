@@ -330,10 +330,10 @@ export default async function About() {
         <Section heading="Work" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
-              I specialize in Python & TypeScript, Infrastructure, Backend, web development,
-              UI/UX, and product design, My main focus is designing, building, 
-              and operating scalable and reliable backend platforms. But I am always learning new things.
-              Here are some of the places I have worked.
+              I specialize in Go, TypeScript, and Python, focusing on backend platform engineering, 
+              cloud-native infrastructure, and distributed systems. I design, build, and operate scalable, 
+              reliable backend platforms and developer tools. I also contribute to web applications when 
+              needed and am always learning new technologies. Here are some of the places I have worked.
             </p>
             <Workplaces items={workplaces} />
           </div>
@@ -345,14 +345,14 @@ export default async function About() {
 
 const workplaces = [
   {
-    title: "Founder & Software Engineer",
+    title: "Founder",
     company: "Kivoff",
     date: "2024 - Now",
     imageSrc: kivoffLogo,
     link: "https://www.linkedin.com/company/kivoff/",
   },
   {
-    title: "Jr. Software Engineer",
+    title: "Software Engineer",
     company: "HackerRank",
     date: "2024",
     imageSrc: hackrankLogo,

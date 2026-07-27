@@ -26,9 +26,10 @@ export default function Home() {
             className="max-w-lg animate-in text-secondary"
             style={{ "--index": 1 } as React.CSSProperties}
           >
-            I&apos;m a Software engineer based in Santo Domingo, specialized in backend and infrastructure. I design, build, 
-            and operate scalable and reliable platforms, with experience in distributed systems. 
-            I have also worked in full-stack development when the project requires it.
+            I&apos;m a Software engineer based in Santo Domingo, specializing in backend platform engineering.
+             I design, build, and operate scalable, reliable backend systems and cloud-native infrastructure,
+            with experience in distributed systems. I also contribute to full-stack development when the 
+            project requires it.
           </p>
         </div>
         <div
