@@ -109,6 +109,53 @@ export default async function About() {
 
     {/* Project */}
 
+    {/* forge */}
+        <div className="flex items-start justify-between gap-8">
+
+      <div className="flex flex-col gap-2">
+        <a href="https://github.com/YordiMarte/forge" target="_blank" rel="noopener noreferrer" className="no-underline">
+          <h3 className="font-semibold text-white transition">
+            Forge
+          </h3>
+        <p className="text-gray-400 max-w-xs leading-relaxed">
+          Modern Internal Developer Platform built with Go, NestJS, Kubernetes and AWS.
+        </p>
+        </a>
+      </div>
+
+    <div className="flex flex-wrap gap-2 max-w-[420px] justify-end">
+        <span className="bg-black text-white text-xs px-3 py-1 rounded-full">Next.js</span>
+        <span className="bg-cyan-600 text-cyan-100 text-xs px-3 py-1 rounded-full">React</span>
+        <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
+        <span className="bg-sky-500 text-sky-100 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+        <span className="bg-neutral-800 text-neutral-100 text-xs px-3 py-1 rounded-full">shadcn/ui</span>
+
+        <span className="bg-red-700 text-red-100 text-xs px-3 py-1 rounded-full">NestJS</span>
+        <span className="bg-teal-700 text-teal-100 text-xs px-3 py-1 rounded-full">Prisma</span>
+        <span className="bg-blue-800 text-blue-100 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+        <span className="bg-red-600 text-red-100 text-xs px-3 py-1 rounded-full">Redis</span>
+
+        <span className="bg-cyan-500 text-cyan-100 text-xs px-3 py-1 rounded-full">Go</span>
+
+        <span className="bg-blue-500 text-blue-100 text-xs px-3 py-1 rounded-full">Docker</span>
+        <span className="bg-indigo-600 text-indigo-100 text-xs px-3 py-1 rounded-full">Kubernetes</span>
+        <span className="bg-indigo-500 text-indigo-100 text-xs px-3 py-1 rounded-full">Helm</span>
+        <span className="bg-purple-700 text-purple-100 text-xs px-3 py-1 rounded-full">Terraform</span>
+
+        <span className="bg-orange-600 text-orange-100 text-xs px-3 py-1 rounded-full">AWS</span>
+        <span className="bg-green-700 text-green-100 text-xs px-3 py-1 rounded-full">S3</span>
+        <span className="bg-orange-500 text-orange-100 text-xs px-3 py-1 rounded-full">Lambda</span>
+
+        <span className="bg-violet-600 text-violet-100 text-xs px-3 py-1 rounded-full">OpenTelemetry</span>
+        <span className="bg-orange-700 text-orange-100 text-xs px-3 py-1 rounded-full">Prometheus</span>
+        <span className="bg-amber-600 text-amber-100 text-xs px-3 py-1 rounded-full">Grafana</span>
+
+        <span className="bg-pink-500 text-pink-100 text-xs px-3 py-1 rounded-full">Turborepo</span>
+        <span className="bg-yellow-600 text-yellow-100 text-xs px-3 py-1 rounded-full">PNPM</span>
+        <span className="bg-gray-700 text-gray-200 text-xs px-3 py-1 rounded-full">GitHub Actions</span>
+      </div>
+
+
 
     {/* Ky*/}
     <div className="flex items-start justify-between gap-8">
