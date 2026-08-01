@@ -110,20 +110,19 @@ export default async function About() {
     {/* Project */}
 
     {/* forge */}
-        <div className="flex items-start justify-between gap-8">
-
+    <div className="flex items-start justify-between gap-8">
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/forge" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
             Forge
           </h3>
-        <p className="text-gray-400 max-w-xs leading-relaxed">
-          Modern Internal Developer Platform built with Go, NestJS, Kubernetes and AWS.
-        </p>
+          <p className="text-gray-400 max-w-xs leading-relaxed">
+            Modern Internal Developer Platform built with Go, NestJS, Kubernetes and AWS.
+          </p>
         </a>
       </div>
 
-    <div className="flex flex-wrap gap-2 max-w-[420px] justify-end">
+      <div className="flex flex-wrap gap-2 max-w-[420px] justify-end">
         <span className="bg-black text-white text-xs px-3 py-1 rounded-full">Next.js</span>
         <span className="bg-cyan-600 text-cyan-100 text-xs px-3 py-1 rounded-full">React</span>
         <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
@@ -154,8 +153,7 @@ export default async function About() {
         <span className="bg-yellow-600 text-yellow-100 text-xs px-3 py-1 rounded-full">PNPM</span>
         <span className="bg-gray-700 text-gray-200 text-xs px-3 py-1 rounded-full">GitHub Actions</span>
       </div>
-
-
+    </div>
 
     {/* Ky*/}
     <div className="flex items-start justify-between gap-8">
