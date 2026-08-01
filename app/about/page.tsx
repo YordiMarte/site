@@ -105,7 +105,7 @@ export default async function About() {
         style={{ "--index": 3 } as React.CSSProperties}
       >
 <Section heading="Projects" headingAlignment="left">
-  <div className="flex flex-col gap-6">
+  <div className="flex flex-col gap-12">
 
     {/* Project */}
 
