@@ -155,21 +155,21 @@ export default async function About() {
       </div>
     </div>
 
-    {/* Ky*/}
-    <div className="flex items-start justify-between gap-8">
-
+    
+  {/* Ky*/}
+    <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/Ky" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
             Ky
           </h3>
-        <p className="text-gray-400 max-w-xs leading-relaxed">
-          An MCP native intregration for x402 using the AI SDK
-        </p>
+          <p className="text-gray-400 max-w-xs leading-relaxed">
+            An MCP native intregration for x402 using the AI SDK
+          </p>
         </a>
       </div>
 
-      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+      <div className="flex flex-wrap gap-2">
         <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
         <span className="bg-lime-600 text-cyan-100 text-xs px-3 py-1 rounded-full">Node.Js</span>
         <span className="bg-gray-700 text-gray-200 text-xs px-3 py-1 rounded-full">AI SDK</span>
@@ -180,21 +180,20 @@ export default async function About() {
     </div>
 
     {/* Kivoff */}
-    <div className="flex items-start justify-between gap-8">
-
+    <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/Kivoff" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
             Kivoff
           </h3>
-        <p className="text-gray-400 max-w-xs leading-relaxed">
-          Build the tools. Deploy the future. Powered by AI. Creators of Infera.js,
-          Veftro, Oryze, Fforve and Ky.
-        </p>
+          <p className="text-gray-400 max-w-xs leading-relaxed">
+            Build the tools. Deploy the future. Powered by AI. Creators of Infera.js,
+            Veftro, Oryze, Fforve and Ky.
+          </p>
         </a>
       </div>
 
-      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+      <div className="flex flex-wrap gap-2">
         <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
         <span className="bg-sky-500 text-slate-950 text-xs px-3 py-1 rounded-full">React</span>
         <span className="bg-black text-gray-100 text-xs px-3 py-1 rounded-full">Next.js</span>
@@ -205,25 +204,23 @@ export default async function About() {
     </div>
 
     {/* Site */}
-    <div className="flex items-start justify-between gap-8">
-
+    <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/site" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
             Site
           </h3>
-        <p className="text-gray-400 max-w-xs leading-relaxed">
-          My personal website
-        </p>
+          <p className="text-gray-400 max-w-xs leading-relaxed">
+            My personal website
+          </p>
         </a>
       </div>
 
-      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+      <div className="flex flex-wrap gap-2">
         <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
         <span className="bg-sky-500 text-slate-950 text-xs px-3 py-1 rounded-full">React</span>
         <span className="bg-black text-gray-100 text-xs px-3 py-1 rounded-full">Next.js</span>
         <span className="bg-cyan-500 text-cyan-950 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
-
         <span className="bg-fuchsia-600 text-white text-xs px-3 py-1 rounded-full">Framer Motion</span>
         <span className="bg-amber-400 text-slate-900 text-xs px-3 py-1 rounded-full">MDX</span>
         <span className="bg-emerald-600 text-white text-xs px-3 py-1 rounded-full">Contentlayer</span>
@@ -232,20 +229,19 @@ export default async function About() {
     </div>
 
     {/* score-solution */}
-    <div className="flex items-start justify-between gap-8">
-
+    <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/score-solution" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
             Score-solution
           </h3>
-        <p className="text-gray-400 max-w-xs leading-relaxed">
-          Private Customer Management System.
-        </p>
+          <p className="text-gray-400 max-w-xs leading-relaxed">
+            Private Customer Management System.
+          </p>
         </a>
       </div>
 
-      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+      <div className="flex flex-wrap gap-2">
         <span className="bg-black text-gray-100 text-xs px-3 py-1 rounded-full">Next.js</span>
         <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
         <span className="bg-sky-500 text-slate-950 text-xs px-3 py-1 rounded-full">React</span>
@@ -258,20 +254,19 @@ export default async function About() {
     </div>
 
     {/* Effectis */}
-    <div className="flex items-start justify-between gap-8">
-
+    <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/effectis" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
             Effectis
           </h3>
-        <p className="text-gray-400 max-w-xs leading-relaxed">
-          It is a Redis clone made in TypeScript but using an advanced functional model.
-        </p>
+          <p className="text-gray-400 max-w-xs leading-relaxed">
+            It is a Redis clone made in TypeScript but using an advanced functional model.
+          </p>
         </a>
       </div>
 
-      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+      <div className="flex flex-wrap gap-2">
         <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
         <span className="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Effect</span>
         <span className="bg-red-700 text-red-100 text-xs px-3 py-1 rounded-full">Redis</span>
@@ -284,20 +279,19 @@ export default async function About() {
     </div>
 
     {/* effect-distributed */}
-    <div className="flex items-start justify-between gap-8">
-
+    <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/effect-distributed" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
             effect-distributed
           </h3>
-        <p className="text-gray-400 max-w-xs leading-relaxed">
-          Distributed semaphore library for Effect with pluggable backends and automatic TTL refresh.
-        </p>
+          <p className="text-gray-400 max-w-xs leading-relaxed">
+            Distributed semaphore library for Effect with pluggable backends and automatic TTL refresh.
+          </p>
         </a>
       </div>
 
-      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+      <div className="flex flex-wrap gap-2">
         <span className="bg-blue-600 text-blue-100 text-xs px-3 py-1 rounded-full">TypeScript</span>
         <span className="bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Effect</span>
         <span className="bg-red-700 text-red-100 text-xs px-3 py-1 rounded-full">Redis</span>
@@ -313,20 +307,19 @@ export default async function About() {
     </div>
 
     {/* Infera */}
-    <div className="flex items-start justify-between gap-8">
-
+    <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2">
         <a href="https://github.com/YordiMarte/infera" target="_blank" rel="noopener noreferrer" className="no-underline">
           <h3 className="font-semibold text-white transition">
             Infera
           </h3>
-        <p className="text-gray-400 max-w-xs leading-relaxed">
-          AI Inference Gateway with rate limiting, caching, token billing and observability.
-        </p>
+          <p className="text-gray-400 max-w-xs leading-relaxed">
+            AI Inference Gateway with rate limiting, caching, token billing and observability.
+          </p>
         </a>
       </div>
 
-      <div className="flex flex-wrap gap-2 max-w-[180px] justify-end">
+      <div className="flex flex-wrap gap-2">
         <span className="bg-cyan-600 text-cyan-100 text-xs px-3 py-1 rounded-full">Go</span>
         <span className="bg-pink-700 text-red-100 text-xs px-3 py-1 rounded-full">NestJS</span>
         <span className="bg-red-700 text-red-100 text-xs px-3 py-1 rounded-full">Redis</span>
@@ -341,6 +334,8 @@ export default async function About() {
       </div>
     </div>
   </div>
+
+
 
         </Section>
         <Section heading="Connect" headingAlignment="left">
