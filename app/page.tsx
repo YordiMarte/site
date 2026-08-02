@@ -95,13 +95,12 @@ export default function Home() {
       </div>
 
       <div
-        className="flex animate-in flex-col gap-3"
-        style={{ "--index": 4 } as React.CSSProperties}
+        className="flex animate-in flex-col gap-6"
+        style={{ "--index": 3 } as React.CSSProperties}
       >
         {[
           {
             category: "Languages",
-            color: "text-cyan-400",
             items: [
               { name: "Go", border: "border-cyan-600 text-cyan-400" },
               { name: "TypeScript", border: "border-blue-600 text-blue-400" },
@@ -110,7 +109,6 @@ export default function Home() {
           },
           {
             category: "Backend",
-            color: "text-pink-400",
             items: [
               { name: "NestJS", border: "border-pink-700 text-pink-400" },
               { name: "Redis", border: "border-red-700 text-red-400" },
@@ -120,7 +118,6 @@ export default function Home() {
           },
           {
             category: "Infra",
-            color: "text-sky-400",
             items: [
               { name: "AWS", border: "border-slate-600 text-yellow-500" },
               { name: "Kubernetes", border: "border-blue-500 text-blue-400" },
@@ -130,7 +127,6 @@ export default function Home() {
           },
           {
             category: "Observability",
-            color: "text-orange-400",
             items: [
               { name: "OpenTelemetry", border: "border-yellow-600 text-yellow-400" },
               { name: "Prometheus", border: "border-orange-600 text-orange-400" },
@@ -139,7 +135,6 @@ export default function Home() {
           },
           {
             category: "Frontend",
-            color: "text-teal-400",
             items: [
               { name: "Next.js", border: "border-gray-500 text-gray-200" },
               { name: "React.js", border: "border-sky-500 text-sky-400" },
@@ -147,7 +142,6 @@ export default function Home() {
           },
           {
             category: "Tooling & AI",
-            color: "text-purple-400",
             items: [
               { name: "GitHub Actions", border: "border-blue-800 text-blue-400" },
               { name: "Turborepo", border: "border-pink-500 text-pink-400" },
