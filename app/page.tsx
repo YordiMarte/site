@@ -152,14 +152,8 @@ export default function Home() {
             ],
           },
         ].map((group) => (
-          <div
-            key={group.category}
-            className="flex flex-col gap-3 rounded-xl border border-primary/10 px-5 py-4 sm:flex-row sm:items-center"
-          >
-            <p className={`w-32 shrink-0 text-sm font-medium ${group.color}`}>
-              {group.category}
-            </p>
-            <div className="hidden h-6 w-px bg-primary/10 sm:block" />
+          <div key={group.category} className="flex items-center gap-4">
+            <p className="w-32 shrink-0 text-secondary">{group.category}</p>
             <div className="flex flex-wrap gap-2">
               {group.items.map((item) => (
                 <span
