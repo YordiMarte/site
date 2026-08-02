@@ -61,51 +61,35 @@ export default function Home() {
         </div>
       </div>
 
-      <div
-        className="flex animate-in flex-col gap-6"
-        style={{ "--index": 3 } as React.CSSProperties}
+          <div
+        className="flex animate-in flex-col gap-8"
+        style={{ "--index": 4 } as React.CSSProperties}
       >
-        <p className="tracking-tight text-secondary">Certifications</p>
+        <p className="tracking-tight text-secondary">Pinned</p>
         <div className="flex flex-col gap-4">
           {[
             {
               title: "Software Engineer",
-              summary: "HackerRank Role Certification",
-              issued: "May 2024",
+              summary: "HackerRank role certification",
               url: "https://www.hackerrank.com/certificates/0de116df66dd",
             },
             {
               title: "Python (Basic)",
-              summary: "HackerRank Skill Certification",
-              issued: "May 2024",
+              summary: "HackerRank skill certification",
               url: "https://www.hackerrank.com/certificates/0e0fe468cc28",
             },
           ].map((cert) => (
-            <div
+            <Link
               key={cert.url}
-              className="flex flex-col gap-3 rounded-xl border border-primary/10 bg-secondary/40 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
+              href={cert.url}
+              className="flex items-center justify-between rounded-lg bg-secondary px-4 py-3 no-underline hover:bg-tertiary"
             >
               <div>
-                <p className="font-semibold text-primary">{cert.title}</p>
-                <p className="text-sm text-blue-400">{cert.summary}</p>
+                <p className="font-medium text-primary">{cert.title}</p>
+                <p className="text-sm text-secondary">{cert.summary}</p>
               </div>
-              <div className="flex items-center gap-4">
-                <span className="flex items-center gap-1 rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
-                  <CheckCircleIcon className="h-4 w-4" />
-                  Verified
-                </span>
-                <div className="flex flex-col items-start gap-0.5 sm:items-end">
-                  <p className="text-xs text-tertiary">Issued: {cert.issued}</p>
-                  <Link
-                    href={cert.url}
-                    className="flex items-center gap-1 text-xs text-blue-400 no-underline hover:underline"
-                  >
-                    View Credential
-                    <ArrowUpRightIcon className="h-3 w-3" />
-                  </Link>
-                </div>
-              </div>
-            </div>
+              <ArrowUpRightIcon className="h-5 w-5 text-tertiary" />
+            </Link>
           ))}
         </div>
       </div>
