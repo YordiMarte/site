@@ -1,5 +1,6 @@
 import { allBlogs } from "contentlayer/generated";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 // import { allProjects } from "contentlayer/generated";
 
 import Link from "@/app/components/Link";
@@ -61,112 +62,143 @@ export default function Home() {
       </div>
 
       <div
-        className="flex animate-in flex-col gap-8"
-        style={{ "--index": 4 } as React.CSSProperties}
+        className="flex animate-in flex-col gap-6"
+        style={{ "--index": 3 } as React.CSSProperties}
       >
-        <p className="tracking-tight text-secondary">Pinned</p>
+        <p className="tracking-tight text-secondary">Certifications</p>
         <div className="flex flex-col gap-4">
           {[
             {
               title: "Software Engineer",
-              summary: "HackerRank role certification",
+              summary: "HackerRank Role Certification",
+              issued: "May 2024",
               url: "https://www.hackerrank.com/certificates/0de116df66dd",
             },
             {
               title: "Python (Basic)",
-              summary: "HackerRank skill certification",
+              summary: "HackerRank Skill Certification",
+              issued: "May 2024",
               url: "https://www.hackerrank.com/certificates/0e0fe468cc28",
             },
           ].map((cert) => (
-            <Link
+            <div
               key={cert.url}
-              href={cert.url}
-              className="flex items-center justify-between rounded-lg bg-secondary px-4 py-3 no-underline hover:bg-tertiary"
+              className="flex flex-col gap-3 rounded-xl border border-primary/10 bg-secondary/40 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
             >
               <div>
-                <p className="font-medium text-primary">{cert.title}</p>
-                <p className="text-sm text-secondary">{cert.summary}</p>
+                <p className="font-semibold text-primary">{cert.title}</p>
+                <p className="text-sm text-blue-400">{cert.summary}</p>
               </div>
-              <ArrowUpRightIcon className="h-5 w-5 text-tertiary" />
-            </Link>
+              <div className="flex items-center gap-4">
+                <span className="flex items-center gap-1 rounded-full bg-green-500/10 px-3 py-1 text-xs font-medium text-green-400">
+                  <CheckCircleIcon className="h-4 w-4" />
+                  Verified
+                </span>
+                <div className="flex flex-col items-start gap-0.5 sm:items-end">
+                  <p className="text-xs text-tertiary">Issued: {cert.issued}</p>
+                  <Link
+                    href={cert.url}
+                    className="flex items-center gap-1 text-xs text-blue-400 no-underline hover:underline"
+                  >
+                    View Credential
+                    <ArrowUpRightIcon className="h-3 w-3" />
+                  </Link>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
 
-<div
-  className="flex animate-in flex-col gap-6"
-  style={{ "--index": 3 } as React.CSSProperties}
->
-  {[
-    {
-      category: "Languages",
-      items: [
-        { name: "Go", color: "bg-cyan-600 text-cyan-100" },
-        { name: "TypeScript", color: "bg-blue-600 text-blue-100" },
-        { name: "Python", color: "bg-yellow-500 text-white" },
-      ],
-    },
-    {
-      category: "Backend",
-      items: [
-        { name: "NestJS", color: "bg-pink-700 text-red-100" },
-        { name: "Redis", color: "bg-red-700 text-red-100" },
-        { name: "PostgreSQL", color: "bg-blue-900 text-blue-100" },
-        { name: "Kafka", color: "bg-gray-800 text-gray-100" },
-      ],
-    },
-    {
-      category: "Infra",
-      items: [
-        { name: "AWS", color: "bg-slate-600 text-yellow-500" },
-        { name: "Kubernetes", color: "bg-blue-500 text-blue-100" },
-        { name: "Terraform", color: "bg-violet-700 text-black" },
-        { name: "Docker", color: "bg-blue-700 text-blue-100" },
-      ],
-    },
-    {
-      category: "Observability",
-      items: [
-        { name: "OpenTelemetry", color: "bg-yellow-600 text-blue-300" },
-        { name: "Prometheus", color: "bg-orange-600 text-orange-100" },
-        { name: "Grafana", color: "bg-orange-500 text-orange-950" },
-      ],
-    },
-    {
-      category: "Frontend",
-      items: [
-        { name: "Next.js", color: "bg-black text-gray-100" },
-        { name: "React.js", color: "bg-sky-500 text-slate-950" },
-      ],
-    },
-    {
-      category: "Tooling & AI",
-      items: [
-        { name: "GitHub Actions", color: "bg-blue-900 text-gray-900" },
-        { name: "Turborepo", color: "bg-pink-500 text-gray-100" },
-        { name: "PNPM", color: "bg-yellow-500 text-gray-900" },
-        { name: "Git", color: "bg-slate-800 text-white" },
-        { name: "Claude", color: "bg-orange-800 text-orange-450" },
-        { name: "GitHub Copilot", color: "bg-purple-600 text-purple-100" },
-      ],
-    },
-  ].map(({ category, items }) => (
-    <div key={category} className="flex items-start gap-4">
-      <p className="w-32 shrink-0 text-lx text-tertiary">{category}</p>
-      <div className="flex flex-wrap gap-2">
-        {items.map(({ name, color }) => (
-          <span key={name} className={`${color} text-xs px-4 py-2 rounded-full`}>
-            {name}
-          </span>
+      <div
+        className="flex animate-in flex-col gap-3"
+        style={{ "--index": 4 } as React.CSSProperties}
+      >
+        {[
+          {
+            category: "Languages",
+            color: "text-cyan-400",
+            items: [
+              { name: "Go", border: "border-cyan-600 text-cyan-400" },
+              { name: "TypeScript", border: "border-blue-600 text-blue-400" },
+              { name: "Python", border: "border-yellow-500 text-yellow-400" },
+            ],
+          },
+          {
+            category: "Backend",
+            color: "text-pink-400",
+            items: [
+              { name: "NestJS", border: "border-pink-700 text-pink-400" },
+              { name: "Redis", border: "border-red-700 text-red-400" },
+              { name: "PostgreSQL", border: "border-blue-800 text-blue-400" },
+              { name: "Kafka", border: "border-gray-700 text-gray-300" },
+            ],
+          },
+          {
+            category: "Infra",
+            color: "text-sky-400",
+            items: [
+              { name: "AWS", border: "border-slate-600 text-yellow-500" },
+              { name: "Kubernetes", border: "border-blue-500 text-blue-400" },
+              { name: "Terraform", border: "border-violet-600 text-violet-400" },
+              { name: "Docker", border: "border-blue-700 text-blue-400" },
+            ],
+          },
+          {
+            category: "Observability",
+            color: "text-orange-400",
+            items: [
+              { name: "OpenTelemetry", border: "border-yellow-600 text-yellow-400" },
+              { name: "Prometheus", border: "border-orange-600 text-orange-400" },
+              { name: "Grafana", border: "border-orange-500 text-orange-400" },
+            ],
+          },
+          {
+            category: "Frontend",
+            color: "text-teal-400",
+            items: [
+              { name: "Next.js", border: "border-gray-500 text-gray-200" },
+              { name: "React.js", border: "border-sky-500 text-sky-400" },
+            ],
+          },
+          {
+            category: "Tooling & AI",
+            color: "text-purple-400",
+            items: [
+              { name: "GitHub Actions", border: "border-blue-800 text-blue-400" },
+              { name: "Turborepo", border: "border-pink-500 text-pink-400" },
+              { name: "PNPM", border: "border-yellow-500 text-yellow-400" },
+              { name: "Git", border: "border-slate-600 text-slate-300" },
+              { name: "Claude", border: "border-orange-700 text-orange-400" },
+              { name: "GitHub Copilot", border: "border-purple-600 text-purple-400" },
+            ],
+          },
+        ].map((group) => (
+          <div
+            key={group.category}
+            className="flex flex-col gap-3 rounded-xl border border-primary/10 px-5 py-4 sm:flex-row sm:items-center"
+          >
+            <p className={`w-32 shrink-0 text-sm font-medium ${group.color}`}>
+              {group.category}
+            </p>
+            <div className="hidden h-6 w-px bg-primary/10 sm:block" />
+            <div className="flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <span
+                  key={item.name}
+                  className={`rounded-md border bg-transparent px-3 py-1 text-xs font-medium ${item.border}`}
+                >
+                  {item.name}
+                </span>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
-    </div>
-  ))}
-</div>
 
       <div
         className="flex animate-in flex-col gap-8"
-        style={{ "--index": 4 } as React.CSSProperties}
+        style={{ "--index": 5 } as React.CSSProperties}
       >
         <div className="space-y-4">
           <Link
