@@ -114,13 +114,16 @@ export default function Home() {
               { name: "Redis", border: "border-red-700 text-red-400" },
               { name: "PostgreSQL", border: "border-blue-800 text-blue-400" },
               { name: "Kafka", border: "border-gray-700 text-gray-300" },
+              { name: "Prisma", border: "border-teal-700 text-teal-300" },
+              { name: "Node.js", border: "border-green-600 text-green-400" },
+              { name: "Supabase", border: "border-emerald-600 text-emerald-400" },
             ],
           },
           {
             category: "Infra",
             items: [
-              { name: "AWS", border: "border-slate-600 text-yellow-500" },
-              { name: "Kubernetes", border: "border-blue-500 text-blue-400" },
+              { name: "AWS (S3, Lambda, EKS)", border: "border-slate-600 text-yellow-500" },
+              { name: "Kubernetes (Helm)", border: "border-blue-500 text-blue-400" },
               { name: "Terraform", border: "border-violet-600 text-violet-400" },
               { name: "Docker", border: "border-blue-700 text-blue-400" },
             ],
@@ -138,6 +141,8 @@ export default function Home() {
             items: [
               { name: "Next.js", border: "border-gray-500 text-gray-200" },
               { name: "React.js", border: "border-sky-500 text-sky-400" },
+              { name: "Tailwind CSS", border: "border-cyan-500 text-cyan-400" },
+              { name: "shadcn/ui", border: "border-neutral-600 text-neutral-300" },
             ],
           },
           {
